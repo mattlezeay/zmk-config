@@ -14,37 +14,37 @@
 
         default_layer {
             bindings = <
-                &kp Q      &kp W      &kp E      &kp R      &kp T      &none              &none      &kp Y      &kp U      &kp I      &kp O       &kp P
-                &kp A      &kp S      &kp D      &kp F      &kp G      &none              &none      &kp H      &kp J      &kp K      &kp L       &kp SEMI
-                &kp Z      &kp X      &kp C      &kp V      &kp B      &kp BSPC           &kp SPACE  &kp N      &kp M      &kp COMMA  &kp QMARK   &kp FSLH
-                &kp ESC    &kp TAB    &kp LCTRL  &mo 2      &kp LCMD   &none              &none      &kp RALT   &mo 1      &kp RSHFT  &kp SQT     &kp RET
+                &kp Q                &kp W       &kp E      &kp R      &kp T      &none                 &none            &kp Y               &kp U      &kp I      &kp O       &kp P
+                &kp A                &kp S       &kp D      &kp F      &kp G      &none                 &none            &kp H               &kp J      &kp K      &kp L       &kp SEMI
+                &ht_tp LSHIFT Z      &kp X       &kp C      &kp V      &kp B      &ht_tp LCTRL DEL      &ht_tp RALT RET  &kp N               &kp M      &kp COMMA  &kp QMARK   &kp FSLH
+                &kp ESC              &kp LGUI    &kp TAB    &mo 2      &kp BSPC   &none                 &none            &ht_tp SPACE &mo3   &mo 1      &kp MINUS  &kp SQT     &kp EQUAL
             >;
         };
 
         blue_layer {
             bindings = <
-                &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &none              &none      &kp LS(Y)  &kp LS(U)  &kp LS(I)  &kp LS(O)  &kp LS(P)
-                &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &none              &none      &kp LS(H)  &kp LS(J)  &kp LS(K)  &kp LS(L)  &kp COLON
-                &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp BSPC           &kp SPACE  &kp LS(N)  &kp LS(M)  &kp DOT    &kp EXCL   &kp BSLH
-                &trans     &trans     &trans     &mo 3      &trans     &none              &none      &trans     &trans     &trans     &kp DQT    &trans
+                &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &none              &none      &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DEL
+                &kp LGUI   &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &none              &none      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp BKSP
+                &kp SHIFT  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)  &kp DEL            &kp RET    &kp LS(N)  &kp LS(M)  &kp TAB    &kp EXCL   &kp INS
+                &trans     &trans     &trans     &mo 3      &trans     &none              &none      &trans     &trans     &trans     &kp DQT    &kp PSCRN
             >;
         };
 
         red_layer {
             bindings = <
-                &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &none              &none      &kp N6     &kp N7     &kp N8     &kp N9     &kp N0
-                &kp PLUS   &kp STAR   &kp UP     &kp CARET  &kp AMPS   &none              &none      &kp LT     &kp LPAR   &kp LBRC   &kp LBKT   &trans
-                &kp GRAVE  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DLLR   &trans             &trans     &kp EQUAL  &kp UNDER  &trans     &trans     &trans
-                &trans     &trans     &trans     &trans     &trans     &none              &none      &trans     &mo 3      &trans     &trans     &trans
+                &trans     &kp F9     &kp F10    &kp F11    &kp F12    &none              &none      &bt BT_CLR    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp C_PWR
+                &trans     &kp F5     &kp F6     &kp F7     &kp F8     &none              &none      &kp C_VOL_UP  &kp K_PREV &kp C_PP   &kp K_NEXT   &trans
+                &trans     &kp F1     &kp F2     &kp F3     &kp F4     &trans             &trans     &kp C_VOL_DN  &kp UNDER  &trans     &trans     &trans
+                &trans     &trans     &trans     &trans     &trans     &none              &none      &trans        &trans     &trans     &trans     &trans
             >;
         };
 
         purple_layer {
             bindings = <
-                &kp C_BRI_DN &kp C_BRI_UP &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &none      &none      &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp C_PWR
-                &kp MINUS    &kp FSLH     &trans       &kp PRCNT    &kp PIPE   &none      &none      &kp GT       &kp RPAR     &kp RBRC   &kp RBKT     &trans
-                &kp TILDE    &trans       &trans       &trans       &kp HASH   &trans     &trans     &trans       &kp AT       &trans     &trans       &trans
-                &trans       &trans       &trans       &trans       &trans     &none      &none      &trans       &trans       &trans     &trans       &trans
+                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC   &kp C_MUTE  &none      &none      &kp SLASH    &kp N7       &kp N8     &kp N9       &kp STAR
+                &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR   &kp TILDE   &none      &none      &kp PIPE     &kp N4       &kp N5     &kp N6       &kp MINUS
+                &kp PRCNT    &kp CARET    &kp LBKT     &kp RBK    &kp GRAVE   &trans     &trans     &kp BSLH     &kp N1       &kp N2     &kp N3       &kp PLUS
+                &trans       &trans       &trans       &trans     &trans      &none      &none      &trans       &kp N0       &kp DOT    &kp EQUAL    &trans       
             >;
         };
 
