@@ -23,10 +23,10 @@
 
         blue_layer {
             bindings = <
-                &trans     &trans     &trans     &trans   &trans       &none               &none      &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DEL
+                &trans     &trans     &trans     &trans   &trans        &none              &none      &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DEL
                 &kp LGUI   &trans     &trans     &trans   &trans        &none              &none      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp BKSP
-                &trans     &kp K_CUT  &kp K_COPY &kp K_PASTE &trans     &tans              &trans     &trans     &trans     &kp TAB    &kp EXCL   &kp INS
-                &trans     &trans     &trans     &mo 3       &trans     &none              &none      &trans     &trans     &trans     &kp DQT    &kp PSCRN
+                &trans     &kp K_CUT  &kp K_COPY &kp K_PASTE &trans     &trans             &trans     &trans     &trans     &kp TAB    &kp EXCL   &kp INS
+                &trans     &trans     &trans     &trans      &trans     &none              &none      &trans     &trans     &trans     &kp DQT    &kp PSCRN
             >;
         };
 
