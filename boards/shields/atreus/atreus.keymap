@@ -10,7 +10,7 @@
 
 / {
     keymap {
-        compatible = "zmk,keymap";
+        compatible = "zmk,keymap,behavior-hold-tap";
 
         default_layer {
             bindings = <
