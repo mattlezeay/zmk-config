@@ -8,16 +8,21 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define BLUE    1
+#define RED     2
+#define PURPLE  3
+
 / {
     keymap {
         compatible = "zmk,keymap,behavior-hold-tap";
 
         default_layer {
             bindings = <
-                &kp Q                &kp W       &kp E      &kp R      &kp T      &none                 &none             &kp Y                &kp U      &kp I      &kp O       &kp P
-                &kp A                &kp S       &kp D      &kp F      &kp G      &none                 &none             &kp H                &kp J      &kp K      &kp L       &kp SEMI
-                &ht_tp LSHIFT Z      &kp X       &kp C      &kp V      &kp B      &ht_tp LCTRL DEL      &ht_tp RALT RET   &kp N                &kp M      &kp COMMA  &kp DOT     &kp FSLH
-                &kp ESC              &kp LGUI    &kp TAB    &mo 2      &kp BSPC   &none                 &none             &lt_tp 3 SPACE       &mo 1      &kp MINUS  &kp SQT     &kp EQUAL
+                &kp Q          &kp W       &kp E      &kp R      &kp T      &none                 &none             &kp Y              &kp U         &kp I      &kp O       &kp P
+                &kp A          &kp S       &kp D      &kp F      &kp G      &none                 &none             &kp H              &kp J         &kp K      &kp L       &kp SEMI
+                &mt LSHIFT Z   &kp X       &kp C      &kp V      &kp B      &mt LCTRL DEL         &mt RALT RET      &kp N              &kp M         &kp COMMA  &kp DOT     &kp FSLH
+                &kp ESC        &kp LGUI    &kp TAB    &mo RED    &kp BSPC   &none                 &none             &lt PURPLE SPACE   &mo BLUE      &kp MINUS  &kp SQT     &kp EQUAL
             >;
         };
 
