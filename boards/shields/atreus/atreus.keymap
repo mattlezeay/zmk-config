@@ -21,7 +21,7 @@
             bindings = <
                 &kp Q          &kp W       &kp E      &kp R      &kp T      &none                 &none             &kp Y              &kp U         &kp I      &kp O       &kp P
                 &kp A          &kp S       &kp D      &kp F      &kp G      &none                 &none             &kp H              &kp J         &kp K      &kp L       &kp SEMI
-                &mt LSHIFT Z   &kp X       &kp C      &kp V      &kp B      &mt LCTRL DEL         &mt RALT RET      &kp N              &kp M         &kp COMMA  &kp DOT     &kp FSLH
+                &mt LSHIFT Z   &kp X       &kp C      &kp V      &kp B      &mt LCTRL DEL         &mt RALT RET      &kp N              &kp M         &kp COMMA  &kp DOT     &mt RSHIFT FSLH
                 &kp ESC        &kp LGUI    &kp TAB    &mo RED    &kp BSPC   &none                 &none             &lt PURPLE SPACE   &mo BLUE      &kp MINUS  &kp SQT     &kp EQUAL
             >;
         };
@@ -30,7 +30,7 @@
             bindings = <
                 &trans     &trans     &trans     &trans   &trans        &none              &none      &kp PG_UP  &kp HOME   &kp UP     &kp END    &kp DEL
                 &kp LGUI   &trans     &trans     &trans   &trans        &none              &none      &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp BKSP
-                &trans     &trans     &trans     &trans   &trans        &trans             &trans     &trans     &trans     &kp TAB    &kp EXCL   &kp INS
+                &kp LSHIFT &trans     &trans     &trans   &trans        &trans             &trans     &trans     &trans     &kp TAB    &kp EXCL   &kp INS
                 &trans     &trans     &trans     &trans   &trans        &none              &none      &trans     &trans     &trans     &kp DQT    &kp PSCRN
             >;
         };
@@ -39,14 +39,14 @@
             bindings = <
                 &trans     &kp F9     &kp F10    &kp F11    &kp F12    &none              &none      &bt BT_CLR    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp C_PWR
                 &trans     &kp F5     &kp F6     &kp F7     &kp F8     &none              &none      &kp C_VOL_UP  &kp K_PREV &kp C_PP   &kp K_NEXT   &trans
-                &trans     &kp F1     &kp F2     &kp F3     &kp F4     &trans             &trans     &kp C_VOL_DN  &kp UNDER  &trans     &trans       &trans
+                &trans     &kp F1     &kp F2     &kp F3     &kp F4     &trans             &trans     &kp C_VOL_DN  &kp C_MUTE  &trans     &trans       &trans
                 &trans     &trans     &trans     &trans     &trans     &none              &none      &trans        &trans     &trans     &trans       &trans
             >;
         };
 
         purple_layer {
             bindings = <
-                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC   &kp C_MUTE  &none      &none      &kp SLASH    &kp N7       &kp N8     &kp N9       &kp STAR
+                &kp EXCL     &kp AT       &kp LBRC     &kp RBRC   &kp AMPS    &none      &none      &kp SLASH    &kp N7       &kp N8     &kp N9       &kp STAR
                 &kp HASH     &kp DLLR     &kp LPAR     &kp RPAR   &kp TILDE   &none      &none      &kp PIPE     &kp N4       &kp N5     &kp N6       &kp MINUS
                 &kp PRCNT    &kp CARET    &kp LBKT     &kp RBKT   &kp GRAVE   &trans     &trans     &kp BSLH     &kp N1       &kp N2     &kp N3       &kp PLUS
                 &trans       &trans       &trans       &trans     &trans      &none      &none      &trans       &kp N0       &kp DOT    &kp EQUAL    &trans
